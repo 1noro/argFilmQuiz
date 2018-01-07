@@ -38,6 +38,7 @@ public class LevelList extends AppCompatActivity {
 
         LinearLayout ll = findViewById(R.id.level_list_layout);
         LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        lp.setMargins(0,5,0,5);
 
         i=0;
         while (i<jsonResponse.length()) {
@@ -46,6 +47,9 @@ public class LevelList extends AppCompatActivity {
             try {
                 levelName=(String)jsonResponse.get(i);
                 myButton.setText(levelName);
+                myButton.setBackgroundColor(getResources().getColor(android.R.color.darker_gray));
+                myButton.setTextColor(getResources().getColor(R.color.c222));
+                myButton.setTextSize(17);
                 JSONObject para = new JSONObject("{\"id\":"+i+",\"levelName\":\""+levelName+"\"}");
                 myButton.setOnClickListener(new MyOnClickListener2(para) {
                     @Override

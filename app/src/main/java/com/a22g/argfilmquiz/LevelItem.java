@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.ViewManager;
 import android.view.Window;
 import android.widget.Button;
@@ -55,10 +56,16 @@ public class LevelItem extends Activity {
         EditText etTit = findViewById(R.id.level_item_editText);
         ll.removeView(etTit);
         ll.removeView(btnSubmit);
+
+        /*LinearLayout.LayoutParams lp = (LinearLayout.LayoutParams) ll.getLayoutParams();
+        lp.setMargins(0,0,0,0);
+        ll.setLayoutParams(lp);*/
+
         TextView txtv = new TextView(getApplicationContext());
         txtv.setText((String) itemTitles.get(0));
         txtv.setGravity(Gravity.CENTER);
         txtv.setTextColor(Color.WHITE);
+        txtv.setBackgroundColor(getResources().getColor(R.color.c555));
         txtv.setTextSize(30);
         ll.addView(txtv);
     }
@@ -73,7 +80,7 @@ public class LevelItem extends Activity {
         btnSubmit=findViewById(R.id.level_item_btnSubmit);
 
         Bundle b = getIntent().getExtras();
-        String JSONstr = b.getString("levelItemJson");
+        String JSONstr = b.getString("levelItemJson","[]");
 
         try {
             JSONobj=new JSONObject(JSONstr);
