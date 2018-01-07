@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.a22g.argfilmquiz.LevelList">
+
+    <LinearLayout
+        android:id="@+id/level_list_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--<Button
+            android:id="@+id/lv1_but"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nivel 1" />
+
+        <Button
+            android:id="@+id/lv2_but"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nivel 2" />
+
+        <Button
+            android:id="@+id/lv3_but"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nivel 3" />-->
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
