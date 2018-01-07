@@ -12,12 +12,12 @@ import static android.content.Context.MODE_PRIVATE;
 
 public final class SDMng {
 
-    public static final String fileName = "argFilmQuiz_saved_data";
+    private static final String fileName = "argFilmQuiz_saved_data";
     public static ArrayList<String> savedProgress = new ArrayList<>();
 
 
 
-    public static ArrayList<String> JAtoAL(JSONArray JSONa) throws JSONException {
+    private static ArrayList<String> JAtoAL(JSONArray JSONa) throws JSONException {
         ArrayList<String> out = new ArrayList<>();
         // (JSONArray) JSONa --> (ArrayList<String>) out
         if (JSONa != null) {
@@ -28,7 +28,7 @@ public final class SDMng {
         return out;
     }
 
-    public static JSONArray ALtoJA(ArrayList<String> al) {
+    private static JSONArray ALtoJA(ArrayList<String> al) {
         return new JSONArray(al);
     }
 

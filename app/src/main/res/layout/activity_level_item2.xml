@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -57,7 +56,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                android:contentDescription="Fotograma"
+                android:contentDescription="@string/frame_imageView_contDesc"
                 android:src="@drawable/f0" /><!--android:src="@drawable/f0"-->
 
             <LinearLayout
@@ -86,7 +85,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/myColorAccent"
-                    android:text="COMPROBAR"
+                    android:text="@string/check_button"
                     android:textColor="@color/white" />
 
             </LinearLayout>

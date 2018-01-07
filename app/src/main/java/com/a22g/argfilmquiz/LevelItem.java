@@ -3,22 +3,16 @@ package com.a22g.argfilmquiz;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.ViewManager;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -28,18 +22,18 @@ import java.util.ArrayList;
 // ANTES EXTENDIA A: AppCompatActivity (cambiado para eliminar el titulo)
 public class LevelItem extends Activity {
 
-    JSONObject JSONobj;
-    JSONArray itemFrames;
-    JSONArray itemTitles;
+    private JSONObject JSONobj;
+    private JSONArray itemFrames;
+    private JSONArray itemTitles;
 
-    ImageView frameView;
-    Button btnSubmit;
+    private ImageView frameView;
+    private Button btnSubmit;
 
-    public boolean checkItemOk(String id) {
+    private boolean checkItemOk(String id) {
         return SDMng.savedProgress.contains(id);
     }
 
-    public ArrayList<String> JAtoAL2(JSONArray JSONa) throws JSONException {
+    private ArrayList<String> JAtoAL2(JSONArray JSONa) throws JSONException {
         ArrayList<String> out = new ArrayList<>();
         // (JSONArray) JSONa --> (ArrayList<String>) out
         if (JSONa != null) {
@@ -50,7 +44,7 @@ public class LevelItem extends Activity {
         return out;
     }
 
-    public void displaySuccess() throws JSONException {
+    private void displaySuccess() throws JSONException {
         LinearLayout ll = findViewById(R.id.level_item_linearLayout2);
         Button btnSubmit = findViewById(R.id.level_item_btnSubmit);
         EditText etTit = findViewById(R.id.level_item_editText);
@@ -104,8 +98,8 @@ public class LevelItem extends Activity {
                             String itemId = this.params.getString("id");
                             ArrayList<String> itemTitlesAL = JAtoAL2(itemTitles);
 
-                            LinearLayout ll = findViewById(R.id.level_item_linearLayout2);
-                            Button btnSubmit = findViewById(R.id.level_item_btnSubmit);
+                            /*LinearLayout ll = findViewById(R.id.level_item_linearLayout2);
+                            Button btnSubmit = findViewById(R.id.level_item_btnSubmit);*/
                             EditText etTit = findViewById(R.id.level_item_editText);
 
                             if (itemTitlesAL.contains(etTit.getText().toString().toLowerCase())) {

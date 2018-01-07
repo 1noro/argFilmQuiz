@@ -24,11 +24,11 @@ public class Level extends AppCompatActivity {
 
     private JSONObject JSONobj;
 
-    public boolean checkItemOk(String id) {
+    private boolean checkItemOk(String id) {
         return SDMng.savedProgress.contains(id);
     }
 
-    public String readJsonFile(int id) throws Exception {
+    private String readJsonFile(int id) throws Exception {
 
         InputStream is = getResources().openRawResource(id);
         Writer writer = new StringWriter();
@@ -43,9 +43,7 @@ public class Level extends AppCompatActivity {
             is.close();
         }
 
-        String jsonString = writer.toString();
-
-        return jsonString;
+        return writer.toString();
     }
 
     /* PARA ACTUALIZAR AL VOLVER ATRAS
@@ -64,8 +62,8 @@ public class Level extends AppCompatActivity {
         setContentView(R.layout.activity_level);
 
         Bundle b = getIntent().getExtras();
-        id = b.getInt("id");
-        setTitle(b.getString("levelName"));
+        id = b.getInt("id",0);
+        setTitle(b.getString("levelName","¿nivel?"));
 
         try {
             JSONobj=new JSONObject(readJsonFile(R.raw.level_content));
