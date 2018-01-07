@@ -58,7 +58,7 @@ public class LevelItem extends Activity {
         TextView txtv = new TextView(getApplicationContext());
         txtv.setText((String) itemTitles.get(0));
         txtv.setGravity(Gravity.CENTER);
-        txtv.setTextColor(Color.BLACK);
+        txtv.setTextColor(Color.WHITE);
         txtv.setTextSize(30);
         ll.addView(txtv);
     }
@@ -66,8 +66,8 @@ public class LevelItem extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE); // DEBE IR ANTES DEL SETCONTENTVIEW
-        setContentView(R.layout.activity_level_item);
+        //requestWindowFeature(Window.FEATURE_NO_TITLE); // DEBE IR ANTES DEL SETCONTENTVIEW
+        setContentView(R.layout.activity_level_item2);
 
         frameView =findViewById(R.id.level_item_imageView);
         btnSubmit=findViewById(R.id.level_item_btnSubmit);

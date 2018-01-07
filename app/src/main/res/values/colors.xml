@@ -3,10 +3,14 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="myColorPrimary">#465A63</color>
+    <color name="myColorPrimary">#465a63</color>
     <color name="myColorPrimaryDark">#2c393f</color>
-    <color name="myColorAccent">#0077CC</color>
+    <color name="myColorAccent">#0077cc</color>
     <color name="black">#000000</color>
     <color name="white">#ffffff</color>
+    <color name="c111">#111111</color>
+    <color name="c222">#222222</color>
     <color name="c333">#333333</color>
+    <color name="c555">#555555</color>
+    <color name="cAAA">#aaaaaa</color>
 </resources>

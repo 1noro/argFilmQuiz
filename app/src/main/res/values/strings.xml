@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">argFilmQuiz</string>
+    <string name="title_activity_level_items">LevelItems</string>
+    <string name="back_text">&lt;&lt;</string>
+    <string name="forward_text">&gt;&gt;</string>
+
 </resources>

@@ -4,38 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.a22g.argfilmquiz.LevelList">
+    tools:context="com.a22g.argfilmquiz.LevelList"
+    android:background="@color/myColorPrimaryDark">
 
-    <LinearLayout
-        android:id="@+id/level_list_layout"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <!--<Button
-            android:id="@+id/lv1_but"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:id="@+id/level_list_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nivel 1" />
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical" >
 
-        <Button
-            android:id="@+id/lv2_but"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Nivel 2" />
+            <Button
+                android:id="@+id/lv1_but"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@android:color/darker_gray"
+                android:text="Nivel 1"
+                android:textColor="@color/c222"
+                android:textSize="17sp" />
 
-        <Button
-            android:id="@+id/lv3_but"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Nivel 3" />-->
-    </LinearLayout>
+            <Button
+                android:id="@+id/lv2_but"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@android:color/darker_gray"
+                android:text="Nivel 2"
+                android:textColor="@color/c222"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/lv3_but"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@android:color/darker_gray"
+                android:text="Nivel 3"
+                android:textColor="@color/c222"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+    </ScrollView>
 </android.support.constraint.ConstraintLayout>

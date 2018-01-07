@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.a22g.argfilmquiz.Menu">
+    tools:context="com.a22g.argfilmquiz.Menu"
+    android:background="@color/myColorPrimaryDark">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
@@ -13,23 +14,35 @@
             android:id="@+id/level_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="8dp"
             android:layout_marginEnd="10dp"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical" >
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/films_button"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="PELÍCULAS" />
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/myColorAccent"
+                android:text="PELÍCULAS"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
 
             <Button
                 android:id="@+id/reset_button"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="BORRAR PROGRESO" />
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@android:color/holo_red_light"
+                android:text="BORRAR PROGRESO"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
 
         </LinearLayout>
     </ScrollView>
