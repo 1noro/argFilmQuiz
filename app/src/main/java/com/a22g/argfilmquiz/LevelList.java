@@ -20,10 +20,10 @@ public class LevelList extends AppCompatActivity {
 
     private JSONArray jsonResponse;
 
-    public void levelNotAvaliable() {
+    public void levelNotAvaliable(int leelId) {
         AlertDialog alertDialog = new AlertDialog.Builder(this).create();
         //alertDialog.setTitle("INFORMACIÓN");
-        alertDialog.setMessage("El nivel al que intentas acceder no se ha desbloqueado aún porque no has logrado acertar "+SDMng.levelMin+" películas en el nivel anterior.");
+        alertDialog.setMessage("El nivel al que intentas acceder no se ha desbloqueado aún porque no has logrado acertar "+SDMng.levelMin+" películas en el nivel anterior.\n\nTe faltan: "+SDMng.howManyFilmsAreMissing(leelId));
         alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "CERRAR",
             new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int which) {
@@ -76,7 +76,7 @@ public class LevelList extends AppCompatActivity {
                                 intentLevel.putExtra("levelName", this.params.getString("levelName"));
                                 startActivity(intentLevel);
                             } else {
-                                levelNotAvaliable();
+                                levelNotAvaliable(id);
                             }
                         } catch (JSONException e) {
                             Log.d("##### EXCPETION","this.params.getInt(\"id\") || this.params.getString(\"levelName\")");

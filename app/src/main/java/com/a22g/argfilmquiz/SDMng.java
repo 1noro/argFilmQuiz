@@ -86,6 +86,21 @@ public final class SDMng {
         return out;
     }
 
+    public static int howManyFilmsAreMissing(int levelId) {
+        int out = levelMin;
+
+        try {
+            if (!jasave.isNull(levelId-1)) {
+                out = levelMin - ((JSONArray) jasave.get(levelId - 1)).length();
+            }
+        } catch (JSONException e) {
+            Log.d("### EXCEPTION", "FALLO EN ''out = ((JSONArray)jasave.get(levelId)).length()>=levelMin;''");
+            e.printStackTrace();
+        }
+
+        return out;
+    }
+
     public static void iniSavedData(Context ctx) {
         SharedPreferences savedData = ctx.getSharedPreferences(fileName, MODE_PRIVATE);
         String JSONstr = savedData.getString("JSON", null);
