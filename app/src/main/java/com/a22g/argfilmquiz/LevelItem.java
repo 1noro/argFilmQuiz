@@ -34,10 +34,7 @@ public class LevelItem extends Activity {
 
     private boolean newSuccess=false;
     private int levelImageViewId;
-
-    private boolean checkItemOk(String id) {
-        return SDMng.savedProgress.contains(id);
-    }
+    private int levelId;
 
     private ArrayList<String> JAtoAL2(JSONArray JSONa) throws JSONException {
         ArrayList<String> out = new ArrayList<>();
@@ -86,7 +83,7 @@ public class LevelItem extends Activity {
                 // ### success
                 newSuccess=true;
                 displaySuccess();
-                SDMng.saveProgress(getApplicationContext(), itemId);
+                SDMng.saveProgress(getApplicationContext(),levelId,itemId);
             } else {
                 // ### FAIL
                 etTit.setTextColor(Color.RED);
@@ -127,6 +124,7 @@ public class LevelItem extends Activity {
         try {
             JSONobj=new JSONObject(JSONstr);
             levelImageViewId = JSONobj.getInt("levelImageViewId");
+            levelId = JSONobj.getInt("levelId");
             itemFrames = JSONobj.getJSONArray("frame");
             itemTitles = JSONobj.getJSONArray("title");
 
@@ -135,7 +133,7 @@ public class LevelItem extends Activity {
             int frameId = context.getResources().getIdentifier(frameStrId, "drawable", context.getPackageName());
             frameView.setImageResource(frameId);
 
-            if (!checkItemOk(JSONobj.getString("id"))) {
+            if (!SDMng.checkItemOk(levelId,JSONobj.getString("id"))) {
 
                 textImput.setOnKeyListener(new View.OnKeyListener() {
                     public boolean onKey(View v, int keyCode, KeyEvent event) {

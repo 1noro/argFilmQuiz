@@ -24,6 +24,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class Level extends AppCompatActivity {
 
+    private int id;
     private JSONObject JSONobj;
 
     private static final AtomicInteger sNextGeneratedId = new AtomicInteger(1);
@@ -44,10 +45,6 @@ public class Level extends AppCompatActivity {
                 return result;
             }
         }
-    }
-
-    private boolean checkItemOk(String id) {
-        return SDMng.savedProgress.contains(id);
     }
 
     private String readJsonFile(int id) throws Exception {
@@ -95,7 +92,7 @@ public class Level extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        int i, id;
+        int i;
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level);
@@ -134,7 +131,7 @@ public class Level extends AppCompatActivity {
                 imgb.setId(newId);
                 imgb.setAdjustViewBounds(true);
 
-                if (checkItemOk(levelItem.getString("id"))) {
+                if (SDMng.checkItemOk(id,levelItem.getString("id"))) {
                     imgb.setBackground(getResources().getDrawable(R.drawable.border_true));
                 } else {
                     imgb.setBackground(getResources().getDrawable(R.drawable.border_false));
@@ -142,6 +139,7 @@ public class Level extends AppCompatActivity {
                 imgb.setPadding(10,0,10,0);
 
                 levelItem.put("levelImageViewId",newId);
+                levelItem.put("levelId",id);
 
                 imgb.setOnClickListener(new MyOnClickListener2(levelItem) {
                     @Override

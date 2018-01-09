@@ -33,6 +33,7 @@ public class LevelList extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level_list);
+        setTitle(R.string.films_button);
 
         LinearLayout ll = findViewById(R.id.level_list_layout);
         LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
