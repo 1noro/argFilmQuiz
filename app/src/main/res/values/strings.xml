@@ -7,4 +7,7 @@
     <string name="frame_imageView_contDesc">Fotograma</string>
     <string name="films_button">PELÍCULAS</string>
     <string name="reset_saved_data_button">BORRAR PROGRESO</string>
+    <string name="creditos">CREDITOS</string>
+    <string name="ajustes_title">AJUSTES</string>
+    <string name="imagen_de_titulo_description">Imagen de título</string>
 </resources>

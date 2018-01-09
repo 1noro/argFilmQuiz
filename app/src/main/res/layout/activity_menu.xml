@@ -26,7 +26,8 @@
                 android:layout_marginBottom="0dp"
                 android:layout_marginTop="0dp"
                 android:src="@drawable/bg_tit2"
-                android:adjustViewBounds="true" />
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/imagen_de_titulo_description" />
 
             <LinearLayout
                 android:id="@+id/level_layout2"
@@ -58,7 +59,7 @@
                     android:layout_marginBottom="2dp"
                     android:layout_marginTop="2dp"
                     android:background="@color/c555"
-                    android:text="CREDITOS"
+                    android:text="@string/creditos"
                     android:textColor="@color/white"
                     android:textSize="17sp" />
 
@@ -79,7 +80,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="2dp"
                     android:layout_marginTop="2dp"
-                    android:text="AJUSTES"
+                    android:text="@string/ajustes_title"
                     android:textColor="@color/white"
                     android:textStyle="bold"
                     android:textSize="18sp"
