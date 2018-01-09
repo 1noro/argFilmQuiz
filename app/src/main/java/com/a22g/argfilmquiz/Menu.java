@@ -1,12 +1,14 @@
 package com.a22g.argfilmquiz;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 
-public class Menu extends AppCompatActivity {
+public class Menu extends Activity {
 
     private Button botonPeliculas;
     private Button botonReset;
@@ -14,6 +16,7 @@ public class Menu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE); // DEBE IR ANTES DEL SETCONTENTVIEW
         setContentView(R.layout.activity_menu);
 
         // MUY NECESARIO

@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -29,6 +30,7 @@ public class LevelItem extends Activity {
 
     private ImageView frameView;
     private Button btnSubmit;
+    private EditText textImput;
 
     private boolean newSuccess=false;
     private int levelImageViewId;
@@ -65,7 +67,35 @@ public class LevelItem extends Activity {
         txtv.setTextColor(Color.WHITE);
         txtv.setBackgroundColor(getResources().getColor(R.color.c555));
         txtv.setTextSize(30);
+        txtv.setPadding(10,10,10,10);
         ll.addView(txtv);
+    }
+
+    public void comprobacion() {
+        try {
+
+            JSONArray itemTitles = JSONobj.getJSONArray("title");
+            String itemId = JSONobj.getString("id");
+            ArrayList<String> itemTitlesAL = JAtoAL2(itemTitles);
+
+                            /*LinearLayout ll = findViewById(R.id.level_item_linearLayout2);
+                            Button btnSubmit = findViewById(R.id.level_item_btnSubmit);*/
+            EditText etTit = findViewById(R.id.level_item_editText);
+
+            if (itemTitlesAL.contains(etTit.getText().toString().toLowerCase())) {
+                // ### success
+                newSuccess=true;
+                displaySuccess();
+                SDMng.saveProgress(getApplicationContext(), itemId);
+            } else {
+                // ### FAIL
+                etTit.setTextColor(Color.RED);
+            }
+
+        } catch (JSONException e) {
+            Log.d("##### EXCPETION", "MUCHAS COSAS");
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -88,6 +118,7 @@ public class LevelItem extends Activity {
 
         frameView =findViewById(R.id.level_item_imageView);
         btnSubmit=findViewById(R.id.level_item_btnSubmit);
+        textImput=findViewById(R.id.level_item_editText);
 
         Bundle b = getIntent().getExtras();
         String JSONstr = b.getString("levelItemJson","[]");
@@ -106,35 +137,26 @@ public class LevelItem extends Activity {
 
             if (!checkItemOk(JSONobj.getString("id"))) {
 
+                textImput.setOnKeyListener(new View.OnKeyListener() {
+                    public boolean onKey(View v, int keyCode, KeyEvent event) {
+                        // If the event is a key-down event on the "enter" button
+                        if ((event.getAction() == KeyEvent.ACTION_DOWN) &&
+                                (keyCode == KeyEvent.KEYCODE_ENTER)) {
+                            // Perform action on key press
+                            //Toast.makeText(HelloFormStuff.this, edittext.getText(), Toast.LENGTH_SHORT).show();
+                            Log.d("### LALALALALA", "SE HA PULSADO ENTER XD");
+                            comprobacion();
+                            return true;
+                        }
+                        return false;
+                    }
+                });
+
                 btnSubmit.setOnClickListener(new MyOnClickListener2(JSONobj) {
                     @SuppressLint("ResourceAsColor")
                     @Override
                     public void onClick(View view) {
-                        try {
-
-                            JSONArray itemTitles = this.params.getJSONArray("title");
-                            String itemId = this.params.getString("id");
-                            ArrayList<String> itemTitlesAL = JAtoAL2(itemTitles);
-
-                            /*LinearLayout ll = findViewById(R.id.level_item_linearLayout2);
-                            Button btnSubmit = findViewById(R.id.level_item_btnSubmit);*/
-                            EditText etTit = findViewById(R.id.level_item_editText);
-
-                            if (itemTitlesAL.contains(etTit.getText().toString().toLowerCase())) {
-                                // ### success
-                                newSuccess=true;
-                                displaySuccess();
-                                SDMng.saveProgress(getApplicationContext(), itemId);
-                            } else {
-                                // ### FAIL
-                                etTit.setTextColor(Color.RED);
-                            }
-
-                        } catch (JSONException e) {
-                            Log.d("##### EXCPETION", "MUCHAS COSAS");
-                            e.printStackTrace();
-                        }
-
+                        comprobacion();
                     }
                 });
 
