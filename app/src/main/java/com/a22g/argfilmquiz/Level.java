@@ -85,7 +85,7 @@ public class Level extends AppCompatActivity {
                 imgb.setPadding(10,0,10,0);
             }
             if (resultCode == Activity.RESULT_CANCELED) {
-                Log.d("### LALALALA","NO HAY RESULT");
+                //Log.d("### LALALALA","NO HAY RESULT");
             }
         }
     }//onActivityResult
@@ -116,7 +116,7 @@ public class Level extends AppCompatActivity {
             JSONArray levelArr = (JSONArray) moviesArr.get(id);
 
             i=0;
-            while (i<=levelArr.length()) {
+            while (i<levelArr.length()) {
 
                 JSONObject levelItem = (JSONObject) levelArr.get(i);
                 JSONArray itemFrames = levelItem.getJSONArray("frame");
@@ -127,7 +127,6 @@ public class Level extends AppCompatActivity {
                 int frameId = context.getResources().getIdentifier(frameStrId, "drawable", context.getPackageName());
                 imgb.setImageResource(frameId);
                 int newId = generateViewId();
-                Log.d("### LALALALA","newId: "+newId);
                 imgb.setId(newId);
                 imgb.setAdjustViewBounds(true);
 
@@ -157,7 +156,7 @@ public class Level extends AppCompatActivity {
             }
 
         } catch (JSONException e) {
-            Log.d("##### EXCPETION", "jsonResponse.get(" + id + ")");
+            Log.d("##### EXCPETION", "jsonResponse.get(" + id + ") heyeyeyeyeyeyeee");
             e.printStackTrace();
         }
 

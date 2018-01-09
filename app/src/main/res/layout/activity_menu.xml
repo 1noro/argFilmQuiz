@@ -25,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="0dp"
                 android:layout_marginTop="0dp"
-                android:src="@drawable/bg_tit2"
+                android:src="@drawable/bg_tit4"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/imagen_de_titulo_description" />
 

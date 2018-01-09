@@ -14,7 +14,7 @@ import static android.content.Context.MODE_PRIVATE;
 public final class SDMng {
 
     private static final String fileName = "argFilmQuiz_saved_data";
-    public static final int levelMin = 20;
+    public static final int levelMin = 3; //3
     public static JSONArray jasave = new JSONArray();
 
     private static ArrayList<String> JAtoAL(JSONArray JSONa) throws JSONException {
@@ -58,9 +58,11 @@ public final class SDMng {
         boolean out = false;
 
         try {
-            out = JAtoAL((JSONArray)jasave.get(levelId)).contains(filmnId);
+            if (!jasave.isNull(levelId)) {
+                out = JAtoAL((JSONArray) jasave.get(levelId)).contains(filmnId);
+            }
         } catch (JSONException e) {
-            Log.d("### EXCEPTION","FALLO EN ''out = JAtoAL((JSONArray)jasave.get(levelId)).contains(filmnId);''");
+            Log.d("### EXCEPTION","FALLO EN ''out = JAtoAL((JSONArray)jasave.get("+levelId+")).contains("+filmnId+");''");
             e.printStackTrace();
         }
 
@@ -72,7 +74,9 @@ public final class SDMng {
 
         if (levelId!=0) {
             try {
-                out = ((JSONArray) jasave.get(levelId - 1)).length() >= levelMin;
+                if (!jasave.isNull(levelId-1)) {
+                    out = ((JSONArray) jasave.get(levelId - 1)).length() >= levelMin;
+                }
             } catch (JSONException e) {
                 Log.d("### EXCEPTION", "FALLO EN ''out = ((JSONArray)jasave.get(levelId)).length()>=levelMin;''");
                 e.printStackTrace();

@@ -213,7 +213,7 @@
       {
         "id":15,
         "title":[
-          "juno"
+          "Juno"
         ],
         "frame":[
           "f15"
@@ -392,16 +392,340 @@
         "frame":[
           "f31"
         ]
+      },
+      {
+        "id":32,
+        "title":[
+          "Gladiator",
+          "El gladiador"
+        ],
+        "frame":[
+          "f32"
+        ]
+      },
+      {
+        "id":33,
+        "title":[
+          "Cero en conducta",
+          "f33"
+        ],
+        "frame":[
+          "f33"
+        ]
+      },
+      {
+        "id":34,
+        "title":[
+          "Atraco a las tres"
+        ],
+        "frame":[
+          "f34"
+        ]
+      },
+      {
+        "id":35,
+        "title":[
+          "El planeta del tesoro",
+          "Treasure Planet"
+        ],
+        "frame":[
+          "f35"
+        ]
+      },
+      {
+        "id":36,
+        "title":[
+          "El truco final (El prestigio)",
+          "El truco final",
+          "El prestigio",
+          "The Prestige"
+        ],
+        "frame":[
+          "f36"
+        ]
+      },
+      {
+        "id":37,
+        "title":[
+          "Valkiria",
+          "Valkyrie"
+        ],
+        "frame":[
+          "f37"
+        ]
+      },
+      {
+        "id":38,
+        "title":[
+          "La pantera Rosa",
+          "The Pink Panther"
+        ],
+        "frame":[
+          "f38"
+        ]
+      },
+      {
+        "id":39,
+        "title":[
+          "The Rocky Horror Picture Show"
+        ],
+        "frame":[
+          "f39"
+        ]
+      },
+      {
+        "id":40,
+        "title":[
+          "Django desencadenado",
+          "Django Unchained"
+        ],
+        "frame":[
+          "f40"
+        ]
+      },
+      {
+        "id":41,
+        "title":[
+          "Este muerto está muy vivo",
+          "Este muerto esta muy vivo",
+          "Weekend at Bernie's",
+          "Weekend at Bernies"
+        ],
+        "frame":[
+          "f41"
+        ]
+      },
+      {
+        "id":42,
+        "title":[
+          "Cry Baby (El lágrima)",
+          "Cry Baby",
+          "El lágrima",
+          "Cry-Baby (El lágrima)",
+          "Cry-Baby"
+        ],
+        "frame":[
+          "f42"
+        ]
+      },
+      {
+        "id":43,
+        "title":[
+          "Zodiac"
+        ],
+        "frame":[
+          "f43"
+        ]
+      },
+      {
+        "id":44,
+        "title":[
+          "La vida secreta de Walter Mitty",
+          "The Secret Life of Walter Mitty"
+        ],
+        "frame":[
+          "f44"
+        ]
+      },
+      {
+        "id":45,
+        "title":[
+          "Prometheus"
+        ],
+        "frame":[
+          "f45"
+        ]
+      },
+      {
+        "id":46,
+        "title":[
+          "El quinto elemento",
+          "The Fifth Element (Le cinquième élément)",
+          "The Fifth Element",
+          "Le cinquième élément",
+          "Le cinquieme element"
+        ],
+        "frame":[
+          "f46"
+        ]
+      },
+      {
+        "id":47,
+        "title":[
+          "20.000 leguas de viaje submarino",
+          "20000 leguas de viaje submarino",
+          "20,000 leguas de viaje submarino",
+          "20,000 Leagues Under the Sea",
+          "20.000 Leagues Under the Sea",
+          "20000 Leagues Under the Sea"
+        ],
+        "frame":[
+          "f47"
+        ]
+      },
+      {
+        "id":48,
+        "title":[
+          "La gran belleza",
+          "La grande bellezza"
+        ],
+        "frame":[
+          "f48"
+        ]
+      },
+      {
+        "id":49,
+        "title":[
+          "Arsénico por compasión",
+          "Arsenico por compasion",
+          "Arsenic and Old Lace"
+        ],
+        "frame":[
+          "f49"
+        ]
+      },
+      {
+        "id":50,
+        "title":[
+          "Radio encubierta",
+          "The Boat That Rocked (Pirate Radio)",
+          "Pirate Radio",
+          "The Boat That Rocked"
+        ],
+        "frame":[
+          "f50"
+        ]
+      },
+      {
+        "id":51,
+        "title":[
+          "Atrápame si puedes",
+          "Atrapame si puedes",
+          "Catch Me If You Can"
+        ],
+        "frame":[
+          "f51"
+        ]
+      },
+      {
+        "id":52,
+        "title":[
+          "El infierno del odio",
+          "Tengoku to Jigoku",
+          "Tengoku to Jigoku (High and Low)",
+          "High and Low"
+        ],
+        "frame":[
+          "f52"
+        ]
+      },
+      {
+        "id":53,
+        "title":[
+          "En busca del arca perdida",
+          "Indiana Jones: Raiders of the Lost Ark",
+          "Indiana Jones; Raiders of the Lost Ark",
+          "Indiana Jones. Raiders of the Lost Ark",
+          "Indiana Jones, Raiders of the Lost Ark",
+          "Indiana Jones Raiders of the Lost Ark",
+          "Indiana Jones y los cazadores del arca perdida",
+          "Indiana Jones En busca del arca perdida",
+          "Indiana Jones: En busca del arca perdida",
+          "Indiana Jones; En busca del arca perdida",
+          "Indiana Jones, En busca del arca perdida",
+          "Indiana Jones. En busca del arca perdida"
+        ],
+        "frame":[
+          "f53"
+        ]
+      },
+      {
+        "id":54,
+        "title":[
+          "Bitelchús",
+          "Beetlejuice",
+          "Bitelchus"
+        ],
+        "frame":[
+          "f54"
+        ]
+      },
+      {
+        "id":55,
+        "title":[
+          "Magnolia"
+        ],
+        "frame":[
+          "f55"
+        ]
+      },
+      {
+        "id":56,
+        "title":[
+          "Gangs of New York"
+        ],
+        "frame":[
+          "f56"
+        ]
+      },
+      {
+        "id":57,
+        "title":[
+          "El incidente",
+          "The Happening"
+        ],
+        "frame":[
+          "f57"
+        ]
+      },
+      {
+        "id":58,
+        "title":[
+          "El jovencito Frankenstein",
+          "Young Frankenstein"
+        ],
+        "frame":[
+          "f58"
+        ]
+      },
+      {
+        "id":59,
+        "title":[
+          "Full Monty",
+          "The Full Monty",
+          "Todo o nada"
+        ],
+        "frame":[
+          "f59"
+        ]
+      },
+      {
+        "id":60,
+        "title":[
+          "Airbag"
+        ],
+        "frame":[
+          "f60"
+        ]
+      },
+      {
+        "id":61,
+        "title":[
+          "Love Actually"
+        ],
+        "frame":[
+          "f61"
+        ]
       }
     ],[
       {
-        "id":61,
+        "id":62,
         "title":[
           "Kung Fury",
           "La furia de Kung"
         ],
         "frame":[
-          "f61"
+          "f62"
         ]
       }
     ],[
