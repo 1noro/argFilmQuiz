@@ -14,7 +14,7 @@ import static android.content.Context.MODE_PRIVATE;
 public final class SDMng {
 
     private static final String fileName = "argFilmQuiz_saved_data";
-    private static final int levelMin = 20;
+    public static final int levelMin = 20;
     public static JSONArray jasave = new JSONArray();
 
     private static ArrayList<String> JAtoAL(JSONArray JSONa) throws JSONException {
@@ -31,7 +31,7 @@ public final class SDMng {
     public static void saveData(Context ctx) {
         SharedPreferences.Editor editor = ctx.getSharedPreferences(fileName, MODE_PRIVATE).edit();
         String JSONstr=jasave.toString();
-        Log.d("### LALALALALA","JSON to save: "+JSONstr);
+        //Log.d("### LALALALALA","JSON to save: "+JSONstr);
         editor.putString("JSON",JSONstr);
         editor.commit();
     }
@@ -70,12 +70,14 @@ public final class SDMng {
     public static boolean checkIfLevelIsAvaliable(int levelId) {
         boolean out=false;
 
-        try {
-            out = ((JSONArray)jasave.get(levelId)).length()>=levelMin;
-        } catch (JSONException e) {
-            Log.d("### EXCEPTION","FALLO EN ''out = ((JSONArray)jasave.get(levelId)).length()>=levelMin;''");
-            e.printStackTrace();
-        }
+        if (levelId!=0) {
+            try {
+                out = ((JSONArray) jasave.get(levelId - 1)).length() >= levelMin;
+            } catch (JSONException e) {
+                Log.d("### EXCEPTION", "FALLO EN ''out = ((JSONArray)jasave.get(levelId)).length()>=levelMin;''");
+                e.printStackTrace();
+            }
+        } else out=true;
 
         return out;
     }
@@ -95,7 +97,7 @@ public final class SDMng {
             e.printStackTrace();
             clearSavedData(ctx);
         }
-        Log.d("### LALALALALA","JSONstr: "+JSONstr);
+        //Log.d("### LALALALALA","JSONstr: "+JSONstr);
     }
 
 }

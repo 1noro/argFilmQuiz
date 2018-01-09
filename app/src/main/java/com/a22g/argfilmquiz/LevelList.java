@@ -1,5 +1,7 @@
 package com.a22g.argfilmquiz;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,6 +19,19 @@ public class LevelList extends AppCompatActivity {
     //private String levelData = "[\"NIVEL 1\", \"NIVEL 2\", \"NIVEL 3\", \"NIVEL 4\"]";
 
     private JSONArray jsonResponse;
+
+    public void levelNotAvaliable() {
+        AlertDialog alertDialog = new AlertDialog.Builder(this).create();
+        //alertDialog.setTitle("INFORMACIÓN");
+        alertDialog.setMessage("El nivel al que intentas acceder no se ha desbloqueado aún porque no has logrado acertar "+SDMng.levelMin+" películas en el nivel anterior.");
+        alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "CERRAR",
+            new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
+                }
+            });
+        alertDialog.show();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,15 +68,20 @@ public class LevelList extends AppCompatActivity {
                 myButton.setOnClickListener(new MyOnClickListener2(para) {
                     @Override
                     public void onClick(View view) {
-                        Intent intentLevel = new Intent(getApplicationContext(), Level.class);
                         try {
-                            intentLevel.putExtra("id", this.params.getInt("id"));
-                            intentLevel.putExtra("levelName", this.params.getString("levelName"));
+                            int id = this.params.getInt("id");
+                            if (SDMng.checkIfLevelIsAvaliable(id)) {
+                                Intent intentLevel = new Intent(getApplicationContext(), Level.class);
+                                intentLevel.putExtra("id", id);
+                                intentLevel.putExtra("levelName", this.params.getString("levelName"));
+                                startActivity(intentLevel);
+                            } else {
+                                levelNotAvaliable();
+                            }
                         } catch (JSONException e) {
                             Log.d("##### EXCPETION","this.params.getInt(\"id\") || this.params.getString(\"levelName\")");
                             e.printStackTrace();
                         }
-                        startActivity(intentLevel);
                     }
                 });
             } catch (JSONException e) {
