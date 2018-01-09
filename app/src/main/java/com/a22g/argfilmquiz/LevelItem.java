@@ -3,6 +3,7 @@ package com.a22g.argfilmquiz;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
@@ -28,6 +29,9 @@ public class LevelItem extends Activity {
 
     private ImageView frameView;
     private Button btnSubmit;
+
+    private boolean newSuccess=false;
+    private int levelImageViewId;
 
     private boolean checkItemOk(String id) {
         return SDMng.savedProgress.contains(id);
@@ -65,6 +69,18 @@ public class LevelItem extends Activity {
     }
 
     @Override
+    public void onBackPressed() {
+        Intent returnIntent = new Intent();
+        if (newSuccess) {
+            returnIntent.putExtra("result", levelImageViewId);
+            setResult(Activity.RESULT_OK, returnIntent);
+        } else {
+            setResult(Activity.RESULT_CANCELED, returnIntent);
+        }
+        finish();
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //requestWindowFeature(Window.FEATURE_NO_TITLE); // DEBE IR ANTES DEL SETCONTENTVIEW
@@ -76,8 +92,10 @@ public class LevelItem extends Activity {
         Bundle b = getIntent().getExtras();
         String JSONstr = b.getString("levelItemJson","[]");
 
+
         try {
             JSONobj=new JSONObject(JSONstr);
+            levelImageViewId = JSONobj.getInt("levelImageViewId");
             itemFrames = JSONobj.getJSONArray("frame");
             itemTitles = JSONobj.getJSONArray("title");
 
@@ -104,6 +122,7 @@ public class LevelItem extends Activity {
 
                             if (itemTitlesAL.contains(etTit.getText().toString().toLowerCase())) {
                                 // ### success
+                                newSuccess=true;
                                 displaySuccess();
                                 SDMng.saveProgress(getApplicationContext(), itemId);
                             } else {
