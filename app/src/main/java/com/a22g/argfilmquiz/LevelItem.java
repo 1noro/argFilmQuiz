@@ -111,7 +111,7 @@ public class LevelItem extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //requestWindowFeature(Window.FEATURE_NO_TITLE); // DEBE IR ANTES DEL SETCONTENTVIEW
-        setContentView(R.layout.activity_level_item2);
+        setContentView(R.layout.activity_level_item);
 
         frameView =findViewById(R.id.level_item_imageView);
         btnSubmit=findViewById(R.id.level_item_btnSubmit);
