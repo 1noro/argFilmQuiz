@@ -2,11 +2,13 @@ package com.a22g.argfilmquiz;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.util.Base64;
 import android.util.Log;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
 import static android.content.Context.MODE_PRIVATE;
@@ -16,6 +18,8 @@ public final class SDMng {
     private static final String fileName = "argFilmQuiz_saved_data";
     public static final int levelMin = 20; //3
     public static JSONArray jasave = new JSONArray();
+
+
 
     private static ArrayList<String> JAtoAL(JSONArray JSONa) throws JSONException {
         ArrayList<String> out = new ArrayList<>();
@@ -101,6 +105,47 @@ public final class SDMng {
         return out;
     }
 
+    public static String exportSavedData() {
+        byte[] data = new byte[0];
+        try {
+            data = jasave.toString().getBytes("UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            Log.d("### EXCEPTION", "FALLO EN ''data = jasave.toString().getBytes(\"UTF-8\");''");
+            e.printStackTrace();
+        }
+        String base64 = Base64.encodeToString(data, Base64.DEFAULT);
+        return base64;
+    }
+
+    public static boolean validateSavedData(String JSONstr) {
+        boolean out = false;
+
+        try {
+            JSONArray ja=new JSONArray(JSONstr);
+            if (ja!=null) {
+                out=true;
+            }
+        } catch (JSONException e) {
+            Log.d("### EXCEPTION","FALLO AL EVALUAR --> JSONstr: ''"+JSONstr+"'' en SDMng.java: ''jasave=new JSONArray(JSONstr);''");
+            out=false;
+        }
+
+        return out;
+    }
+
+    public static void importSavedData(Context ctx, String JSONstr) {
+        try {
+            JSONArray ja=new JSONArray(JSONstr);
+            if (ja!=null) {
+                jasave=ja;
+                saveData(ctx);
+            }
+        } catch (JSONException e) {
+            Log.d("### EXCEPTION","FALLO AL EVALUAR --> JSONstr: ''"+JSONstr+"'' en SDMng.java: ''jasave=new JSONArray(JSONstr);''");
+            e.printStackTrace();
+        }
+    }
+
     public static void iniSavedData(Context ctx) {
         SharedPreferences savedData = ctx.getSharedPreferences(fileName, MODE_PRIVATE);
         String JSONstr = savedData.getString("JSON", null);
@@ -114,7 +159,7 @@ public final class SDMng {
         } catch (JSONException e) {
             Log.d("### EXCEPTION","FALLO AL EVALUAR --> JSONstr: ''"+JSONstr+"'' en SDMng.java: ''jasave=new JSONArray(JSONstr);''");
             e.printStackTrace();
-            clearSavedData(ctx);
+            //clearSavedData(ctx);
         }
         //Log.d("### LALALALALA","JSONstr: "+JSONstr);
     }
