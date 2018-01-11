@@ -16,7 +16,7 @@ import static android.content.Context.MODE_PRIVATE;
 public final class SDMng {
 
     private static final String fileName = "argFilmQuiz_saved_data";
-    public static final int levelMin = 20; //3
+    public static final int levelMin = 3; //3
     public static JSONArray jasave = new JSONArray();
 
 

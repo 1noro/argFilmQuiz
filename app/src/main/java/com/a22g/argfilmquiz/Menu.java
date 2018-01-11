@@ -32,6 +32,7 @@ public class Menu extends Activity {
 
         // Set the default text to a link of the Queen
         //txtUrl.setHint("hola, soy una pista xD");
+        txtUrl.setSingleLine(true);
 
         new AlertDialog.Builder(this)
             .setTitle("IMPORTAR PROGRESO")
