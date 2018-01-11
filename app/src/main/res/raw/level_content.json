@@ -8,6 +8,9 @@
           "El señor de los anillos, La comunidad del anillo",
           "El señor de los anillos; La comunidad del anillo",
           "El señor de los anillos La comunidad del anillo",
+          "El señor de los anillos 1",
+          "El señor de los anillos I",
+          "La comunidad del anillo",
           "The Lord of the Rings: The Fellowship of the Ring",
           "The Lord of the Rings, The Fellowship of the Ring",
           "The Lord of the Rings; The Fellowship of the Ring",
@@ -33,6 +36,7 @@
           "Mad Max, Furia en la carretera",
           "Mad Max; Furia en la carretera",
           "Mad Max Furia en la carretera",
+          "Mad Max 4",
           "Mad Max: Fury Road",
           "Mad Max, Fury Road",
           "Mad Max; Fury Road",
@@ -49,6 +53,7 @@
           "2001, Una odisea del espacio",
           "2001; Una odisea del espacio",
           "2001 Una odisea del espacio",
+          "2001 odisea en el espacio",
           "2001: Una odisea en el espacio",
           "2001, Una odisea en el espacio",
           "2001; Una odisea en el espacio",
@@ -150,6 +155,7 @@
           "Piratas del Caribe; La maldición de la Perla Negra",
           "Piratas del Caribe. La maldición de la Perla Negra",
           "Piratas del Caribe La maldición de la Perla Negra",
+          "La maldición de la Perla Negra",
           "Piratas del Caribe y La maldición de la Perla Negra",
           "Piratas del Caribe La maldicion de la Perla Negra",
           "Piratas del Caribe: La maldicion de la Perla Negra",
@@ -224,6 +230,10 @@
         "title":[
           "Harry Potter y la cámara secreta",
           "Harry Potter y la camara secreta",
+          "Harry Potter la camara secreta",
+          "Harry Potter y la cámara de los secretos",
+          "Harry Potter y la camara de los secretos",
+          "Harry Potter la camara de los secretos",
           "Harry Potter and the Chamber of Secrets",
           "Harry Potter 2"
         ],
@@ -633,7 +643,10 @@
           "Indiana Jones: En busca del arca perdida",
           "Indiana Jones; En busca del arca perdida",
           "Indiana Jones, En busca del arca perdida",
-          "Indiana Jones. En busca del arca perdida"
+          "Indiana Jones. En busca del arca perdida",
+          "Indiana Jones 1",
+          "Indiana Jones I",
+          "En busca del arca perdida"
         ],
         "frame":[
           "f53"
@@ -727,19 +740,9 @@
         "frame":[
           "f62"
         ]
-      }
-    ],[
-      {
-        "id":91,
-        "title":[
-          "Lost in Translation"
-        ],
-        "frame":[
-          "f91"
-        ]
       },
       {
-        "id":92,
+        "id":63,
         "title":[
           "El profesional (Léon)",
           "El profesional",
@@ -748,7 +751,345 @@
           "Leon (Léon)"
         ],
         "frame":[
+          "f63"
+        ]
+      },
+      {
+        "id":64,
+        "title":[
+          "Jungla de cristal III: la venganza",
+          "Jungla de cristal III",
+          "Jungla de cristal 3",
+          "Jungla de cristal III: la venganza",
+          "Jungla de cristal III; la venganza",
+          "Jungla de cristal III. la venganza",
+          "Jungla de cristal III, la venganza",
+          "Jungla de cristal III la venganza",
+          "Jungla de cristal 3: la venganza",
+          "Jungla de cristal 3; la venganza",
+          "Jungla de cristal 3. la venganza",
+          "Jungla de cristal 3, la venganza",
+          "Jungla de cristal 3 la venganza",
+          "Die Hard with a Vengeance",
+          "Jungla de cristal. La venganza",
+          "Jungla de cristal, La venganza",
+          "Jungla de cristal; La venganza",
+          "Jungla de cristal: La venganza",
+          "Jungla de cristal La venganza"
+        ],
+        "frame":[
+          "f64"
+        ]
+      },
+      {
+        "id":65,
+        "title":[
+          "Cuenta conmigo",
+          "Stand by Me"
+        ],
+        "frame":[
+          "f65"
+        ]
+      },
+      {
+        "id":66,
+        "title":[
+          "Troya",
+          "Troy"
+        ],
+        "frame":[
+          "f66"
+        ]
+      },
+      {
+        "id":67,
+        "title":[
+          "Los vikingos",
+          "The Vikings"
+        ],
+        "frame":[
+          "f67"
+        ]
+      },
+      {
+        "id":68,
+        "title":[
+          "Dersu Uzala (El cazador)",
+          "Dersu Uzala",
+          "El cazador"
+        ],
+        "frame":[
+          "f68"
+        ]
+      },
+      {
+        "id":69,
+        "title":[
+          "El renacido (The Revenant)",
+          "The Revenant",
+          "El renacido"
+        ],
+        "frame":[
+          "f69"
+        ]
+      },
+      {
+        "id":70,
+        "title":[
+          "Senderos de gloria",
+          "Paths of Glory"
+        ],
+        "frame":[
+          "f70"
+        ]
+      },
+      {
+        "id":71,
+        "title":[
+          "Cantando bajo la lluvia",
+          "Singin' in the Rain",
+          "Singin in the Rain"
+        ],
+        "frame":[
+          "f71"
+        ]
+      },
+      {
+        "id":72,
+        "title":[
+          "Carretera perdida",
+          "Lost Highway"
+        ],
+        "frame":[
+          "f72"
+        ]
+      },
+      {
+        "id":73,
+        "title":[
+          "Celda 211"
+        ],
+        "frame":[
+          "f73"
+        ]
+      },
+      {
+        "id":74,
+        "title":[
+          "Chocolat"
+        ],
+        "frame":[
+          "f74"
+        ]
+      },
+      {
+        "id":75,
+        "title":[
+          "Moonrise Kingdom"
+        ],
+        "frame":[
+          "f75"
+        ]
+      },
+      {
+        "id":76,
+        "title":[
+          "Fargo"
+        ],
+        "frame":[
+          "f76"
+        ]
+      },
+      {
+        "id":77,
+        "title":[
+          "Pesadilla antes de Navidad",
+          "El extraño mundo de Jack",
+          "The Nightmare Before Christmas"
+        ],
+        "frame":[
+          "f77"
+        ]
+      },
+      {
+        "id":78,
+        "title":[
+          "Mulan"
+        ],
+        "frame":[
+          "f78"
+        ]
+      },
+      {
+        "id":79,
+        "title":[
+          "Ocean's Eleven (Hagan Juego)",
+          "Oceans Eleven (Hagan Juego)",
+          "Hagan Juego",
+          "Ocean's Eleven",
+          "Oceans Eleven",
+          "Ocean's Eleven. Hagan juego",
+          "Ocean's Eleven; Hagan juego",
+          "Ocean's Eleven: Hagan juego",
+          "Ocean's Eleven, Hagan juego",
+          "Ocean's Eleven Hagan juego",
+          "Oceans Eleven. Hagan juego",
+          "Oceans Eleven; Hagan juego",
+          "Oceans Eleven: Hagan juego",
+          "Oceans Eleven, Hagan juego",
+          "Oceans Eleven Hagan juego"
+        ],
+        "frame":[
+          "f79"
+        ]
+      },
+      {
+        "id":80,
+        "title":[
+          "Noche en la Tierra",
+          "Night on Earth"
+        ],
+        "frame":[
+          "f80"
+        ]
+      },
+      {
+        "id":81,
+        "title":[
+          "Parque Jurásico (Jurassic Park)",
+          "Parque Jurasico (Jurassic Park)",
+          "Jurassic Park",
+          "Parque Jurásico",
+          "Parque Jurasico"
+        ],
+        "frame":[
+          "f81"
+        ]
+      },
+      {
+        "id":82,
+        "title":[
+          "Match Point"
+        ],
+        "frame":[
+          "f82"
+        ]
+      },
+      {
+        "id":83,
+        "title":[
+          "Memento"
+        ],
+        "frame":[
+          "f83"
+        ]
+      },
+      {
+        "id":84,
+        "title":[
+          "Metrópolis",
+          "Metropolis"
+        ],
+        "frame":[
+          "f84"
+        ]
+      },
+      {
+        "id":85,
+        "title":[
+          "Malditos bastardos",
+          "Inglourious Basterds"
+        ],
+        "frame":[
+          "f85"
+        ]
+      },
+      {
+        "id":86,
+        "title":[
+          "Primera plana",
+          "The Front Page"
+        ],
+        "frame":[
+          "f86"
+        ]
+      },
+      {
+        "id":87,
+        "title":[
+          "Pozos de ambición",
+          "Pozos de ambicion",
+          "Petróleo sangriento",
+          "Petroleo sangriento",
+          "There Will Be Blood"
+        ],
+        "frame":[
+          "f87"
+        ]
+      },
+      {
+        "id":88,
+        "title":[
+          "X-Men",
+          "X Men"
+        ],
+        "frame":[
+          "f88"
+        ]
+      },
+      {
+        "id":89,
+        "title":[
+          "Zoolander: Un descerebrado de moda",
+          "Zoolander; Un descerebrado de moda",
+          "Zoolander. Un descerebrado de moda",
+          "Zoolander, Un descerebrado de moda",
+          "Zoolander Un descerebrado de moda",
+          "Zoolander (Un descerebrado de moda)",
+          "Zoolander"
+        ],
+        "frame":[
+          "f89"
+        ]
+      },
+      {
+        "id":90,
+        "title":[
+          "Solo en casa",
+          "Mi pobre angelito",
+          "Home Alone"
+        ],
+        "frame":[
+          "f90"
+        ]
+      },
+      {
+        "id":91,
+        "title":[
+          "Sing Street"
+        ],
+        "frame":[
+          "f91"
+        ]
+      },
+      {
+        "id":92,
+        "title":[
+          "El gran Lebowski",
+          "The Big Lebowski"
+        ],
+        "frame":[
           "f92"
+        ]
+      }
+    ],[
+      {
+        "id":93,
+        "title":[
+          "Lost in Translation"
+        ],
+        "frame":[
+          "f93"
         ]
       }
     ]

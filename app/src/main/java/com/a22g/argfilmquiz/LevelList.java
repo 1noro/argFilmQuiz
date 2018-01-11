@@ -15,7 +15,7 @@ import org.json.JSONObject;
 
 public class LevelList extends AppCompatActivity {
 
-    private String levelData = "[\"NIVEL 1\", \"NIVEL 2\"]";
+    private String levelData = "[\"NIVEL 1\", \"NIVEL 2\", \"NIVEL 3\"]";
     //private String levelData = "[\"NIVEL 1\", \"NIVEL 2\", \"NIVEL 3\", \"NIVEL 4\"]";
 
     private JSONArray jsonResponse;
