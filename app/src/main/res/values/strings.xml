@@ -12,4 +12,13 @@
     <string name="creditos">CRÉDITOS</string>
     <string name="ajustes_title">AJUSTES</string>
     <string name="imagen_de_titulo_description">Imagen de título</string>
+
+    <string name="help_title">AYUDA</string>
+    <string name="help_p1">Adivina el título completo de la película basándote en el fotograma mostrado.</string>
+    <string name="help_p2">No es necesario introducir ni acentos ni signos de puntuación en la respuesta.</string>
+    <string name="help_p3">No importa si la respuesta está en mayúsculas o minúsculas.</string>
+    <string name="help_p4">Los niveles suelen tener 30 películas. Es necesario adivinar 20 películas antes de avanzar hacia el siguiente nivel.</string>
+    <string name="help_p5">La partida se guarda automáticamente en tu dispositivo, esto quiere decir que si se borran los datos de la app (o la caché) el progreso se perderá.</string>
+    <string name="help_p6">Para evitar la pérdida de tu información puedes exportar tu progreso en la sección de "AJUSTES" y guardarla en formato de texto.</string>
+    <string name="help_p7">Una vez exportado tu progreso puedes importarlo en cualquier otro dispositivo a través del botón "IMPORTAR PROGRESO" de la sección de "AJUSTES".</string>
 </resources>

@@ -1,6 +1,5 @@
 package com.a22g.argfilmquiz;
 
-import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.ClipData;
@@ -8,7 +7,6 @@ import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Base64;
 import android.util.Log;
@@ -23,6 +21,7 @@ public class Menu extends Activity {
 
     private Button botonPeliculas;
     private Button botonCreditos;
+    private Button botonAyuda;
     private Button botonImport;
     private Button botonExport;
     private Button botonReset;
@@ -103,7 +102,7 @@ public class Menu extends Activity {
     public void showCredits() {
         AlertDialog alertDialog = new AlertDialog.Builder(this).create();
         alertDialog.setTitle("CRÉDITOS");
-        alertDialog.setMessage("Creado y editiado por Inoro.\niinnoorroo@gmail.com");
+        alertDialog.setMessage("2018 - Inoro (iinnoorroo@gmail.com)\n\nEste trabajo se encuentra bajo la licencia GNU GPL v3.0 (o versión posterior).");
         alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "Cerrar",
             new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int which) {
@@ -130,6 +129,15 @@ public class Menu extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intentLevelList = new Intent(getApplicationContext(), LevelList.class);
+                startActivity(intentLevelList);
+            }
+        });
+
+        botonAyuda = findViewById(R.id.help_button);
+        botonAyuda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentLevelList = new Intent(getApplicationContext(), HelpText.class);
                 startActivity(intentLevelList);
             }
         });

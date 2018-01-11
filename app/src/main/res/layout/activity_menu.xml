@@ -52,6 +52,18 @@
                     android:textSize="17sp" />
 
                 <Button
+                    android:id="@+id/help_button"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/c555"
+                    android:text="@string/help_title"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+                <Button
                     android:id="@+id/credits_button"
                     style="@style/Widget.AppCompat.Button.Borderless.Colored"
                     android:layout_width="match_parent"
