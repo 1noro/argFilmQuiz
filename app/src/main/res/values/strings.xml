@@ -12,6 +12,11 @@
     <string name="creditos">CRÉDITOS</string>
     <string name="ajustes_title">AJUSTES</string>
     <string name="imagen_de_titulo_description">Imagen de título</string>
+    <string name="back_name">ATRÁS</string>
+
+    <string name="credits_p1">2018 - Inoro.\n<a href="mailto:iinnoorroo@gmail.com">iinnoorroo@gmail.com</a></string>
+    <string name="credits_p2">Este trabajo se encuentra bajo la licencia <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU GPL v3.0</a> (o versión posterior).</string>
+    <string name="credits_p3"><a href="https://github.com/boot1110001/argFilmQuiz">GitHub</a></string>
 
     <string name="help_title">AYUDA</string>
     <string name="help_p1">Adivina el título completo de la película basándote en el fotograma mostrado.</string>
@@ -21,4 +26,5 @@
     <string name="help_p5">La partida se guarda automáticamente en tu dispositivo, esto quiere decir que si se borran los datos de la app (o la caché) el progreso se perderá.</string>
     <string name="help_p6">Para evitar la pérdida de tu información puedes exportar tu progreso en la sección de "AJUSTES" y guardarla en formato de texto.</string>
     <string name="help_p7">Una vez exportado tu progreso puedes importarlo en cualquier otro dispositivo a través del botón "IMPORTAR PROGRESO" de la sección de "AJUSTES".</string>
+
 </resources>

@@ -24,7 +24,8 @@
             android:parentActivityName=".Menu" />
         <activity android:name=".Level" />
         <activity android:name=".LevelItem" />
-        <activity android:name=".HelpText"></activity>
+        <activity android:name=".HelpText" />
+        <activity android:name=".CreditsText"></activity>
     </application>
 
 </manifest>

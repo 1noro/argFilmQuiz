@@ -3,6 +3,7 @@ package com.a22g.argfilmquiz;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -61,7 +62,12 @@ public class LevelList extends AppCompatActivity {
                 levelName=(String)jsonResponse.get(i);
                 myButton.setText(levelName);
                 myButton.setBackgroundColor(getResources().getColor(android.R.color.darker_gray));
-                myButton.setTextColor(getResources().getColor(R.color.c222));
+                if (SDMng.checkIfLevelIsAvaliable(i)) {
+                    myButton.setTextColor(getResources().getColor(R.color.c111));
+                } else {
+                    myButton.setTextColor(getResources().getColor(R.color.c111)); //POR AHORA NO SE PUEDE HACER ESTO PORQUE LA ACTIVIDAD ANTERIOR NO DEVUELVE NADA
+                }
+                myButton.setTypeface(Typeface.DEFAULT_BOLD);
                 myButton.setTextSize(17);
                 JSONObject para = new JSONObject("{\"id\":"+i+",\"levelName\":\""+levelName+"\"}");
                 myButton.setOnClickListener(new MyOnClickListener2(para) {

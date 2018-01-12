@@ -99,6 +99,7 @@ public class Menu extends Activity {
             .show();
     }
 
+    @Deprecated
     public void showCredits() {
         AlertDialog alertDialog = new AlertDialog.Builder(this).create();
         alertDialog.setTitle("CRÉDITOS");
@@ -146,7 +147,8 @@ public class Menu extends Activity {
         botonCreditos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showCredits();
+                Intent intentLevelList = new Intent(getApplicationContext(), CreditsText.class);
+                startActivity(intentLevelList);
             }
         });
 

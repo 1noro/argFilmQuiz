@@ -1,10 +1,12 @@
 package com.a22g.argfilmquiz;
 
 import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
@@ -30,6 +32,7 @@ public class LevelItem extends Activity {
 
     private ImageView frameView;
     private Button btnSubmit;
+    private Button btnBack;
     private EditText textImput;
 
     private boolean newSuccess=false;
@@ -68,6 +71,7 @@ public class LevelItem extends Activity {
         ll.addView(txtv);
     }
 
+    //@TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public void comprobacion() {
         try {
 
@@ -86,7 +90,8 @@ public class LevelItem extends Activity {
                 SDMng.saveProgress(getApplicationContext(),levelId,itemId);
             } else {
                 // ### FAIL
-                etTit.setTextColor(Color.RED);
+                etTit.setTextColor(getResources().getColor(R.color.rojoYoutube));
+                //etTit.setBackgroundTintList(this.getResources().getColorStateList(R.color.rojoYoutube));
             }
 
         } catch (JSONException e) {
@@ -115,11 +120,18 @@ public class LevelItem extends Activity {
 
         frameView =findViewById(R.id.level_item_imageView);
         btnSubmit=findViewById(R.id.level_item_btnSubmit);
+        btnBack=findViewById(R.id.level_item_btnBack);
         textImput=findViewById(R.id.level_item_editText);
 
         Bundle b = getIntent().getExtras();
         String JSONstr = b.getString("levelItemJson","[]");
 
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
 
         try {
             JSONobj=new JSONObject(JSONstr);

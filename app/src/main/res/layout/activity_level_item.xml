@@ -20,37 +20,6 @@
             android:layout_marginTop="0dp"
             android:orientation="vertical" >
 
-            <!--<LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/back_button"
-                    style="@style/Widget.AppCompat.Button.Colored"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="4dp"
-                    android:layout_weight="1"
-                    android:background="@color/c555"
-                    android:text="@string/back_text"
-                    android:textColor="@color/white"
-                    android:textSize="20sp" />
-
-                <Button
-                    android:id="@+id/forward_button"
-                    style="@style/Widget.AppCompat.Button.Borderless"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="4dp"
-                    android:layout_weight="1"
-                    android:background="@color/c555"
-                    android:text="@string/forward_text"
-                    android:textColor="@color/white"
-                    android:textSize="20sp" />
-
-            </LinearLayout>-->
-
             <ImageView
                 android:id="@+id/level_item_imageView"
                 android:layout_width="match_parent"
@@ -64,7 +33,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="2dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp">
@@ -73,22 +42,47 @@
                     android:id="@+id/level_item_editText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/myColorAccent"
+                    android:backgroundTint="@color/white"
                     android:ems="10"
                     android:inputType="textPersonName"
                     android:text=""
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:textSize="17sp"/>
 
                 <Button
                     android:id="@+id/level_item_btnSubmit"
                     style="@style/Widget.AppCompat.Button.Borderless"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
                     android:background="@color/myColorAccent"
                     android:text="@string/check_button"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:textSize="17sp"/>
 
             </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/level_item_linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp">
+
+            <Button
+                android:id="@+id/level_item_btnBack"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/myAmarillo"
+                android:text="@string/back_name"
+                android:textColor="@color/c222"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
