@@ -2379,7 +2379,8 @@
           "El gabinete del Dr Caligari",
           "The cabinet of Dr. Caligari",
           "The cabinet of Dr Caligari",
-          "Das Cabinet des Dr. Caligari"
+          "Das Cabinet des Dr. Caligari",
+          "Das Cabinet des Dr Caligari"
         ],
         "frame":[
           "f207"
@@ -2490,6 +2491,1022 @@
         ],
         "frame":[
           "f216"
+        ]
+      }
+    ],
+    [
+      {
+        "id":217,
+        "title":[
+          "Eduardo Manostijeras",
+          "Edward Scissorhands"
+        ],
+        "frame":[
+          "f217"
+        ]
+      },
+      {
+        "id":218,
+        "title":[
+          "El viaje de Chihiro",
+          "Sen to Chihiro no kamikakushi"
+        ],
+        "frame":[
+          "f218"
+        ]
+      },
+      {
+        "id":219,
+        "title":[
+          "Legend"
+        ],
+        "frame":[
+          "f219"
+        ]
+      },
+      {
+        "id":220,
+        "title":[
+          "Iron Man",
+          "Ironman"
+        ],
+        "frame":[
+          "f220"
+        ]
+      },
+      {
+        "id":221,
+        "title":[
+          "Gremlins"
+        ],
+        "frame":[
+          "f221"
+        ]
+      },
+      {
+        "id":222,
+        "title":[
+          "El árbol de la vida",
+          "El arbol de la vida",
+          "The Tree of Life"
+        ],
+        "frame":[
+          "f222"
+        ]
+      },
+      {
+        "id":223,
+        "title":[
+          "Cómo ser John Malkovich",
+          "Como ser John Malkovich",
+          "Being John Malkovich"
+        ],
+        "frame":[
+          "f223"
+        ]
+      },
+      {
+        "id":224,
+        "title":[
+          "La milla verde",
+          "The Green Mile"
+        ],
+        "frame":[
+          "f224"
+        ]
+      },
+      {
+        "id":225,
+        "title":[
+          "Atrapado en el tiempo",
+          "Hechizo del tiempo",
+          "El día de la marmota",
+          "El dia de la marmota",
+          "Groundhog Day"
+        ],
+        "frame":[
+          "f225"
+        ]
+      },
+      {
+        "id":226,
+        "title":[
+          "Dentro del laberinto",
+          "Labyrinth"
+        ],
+        "frame":[
+          "f226"
+        ]
+      },
+      {
+        "id":227,
+        "title":[
+          "Muertos de risa"
+        ],
+        "frame":[
+          "f227"
+        ]
+      },
+      {
+        "id":228,
+        "title":[
+          "El secreto de los hermanos Grimm",
+          "The Brothers Grimm"
+        ],
+        "frame":[
+          "f228"
+        ]
+      },
+      {
+        "id":229,
+        "title":[
+          "La bella y la bestia",
+          "La belle et la bête",
+          "La belle et la bete"
+        ],
+        "frame":[
+          "f229"
+        ]
+      },
+      {
+        "id":230,
+        "title":[
+          "Miedo y asco en Las Vegas",
+          "Fear and Loathing in Las Vegas"
+        ],
+        "frame":[
+          "f230"
+        ]
+      },
+      {
+        "id":231,
+        "title":[
+          "Enter the Void",
+          "Soudain le vide"
+        ],
+        "frame":[
+          "f231"
+        ]
+      },
+      {
+        "id":232,
+        "title":[
+          "Trainspotting"
+        ],
+        "frame":[
+          "f232"
+        ]
+      },
+      {
+        "id":233,
+        "title":[
+          "Kill Bill: Volumen 1",
+          "Kill Bill; Volumen 1",
+          "Kill Bill. Volumen 1",
+          "Kill Bill, Volumen 1",
+          "Kill Bill Volumen 1",
+          "Kill Bill: Volume 1",
+          "Kill Bill; Volume 1",
+          "Kill Bill, Volume 1",
+          "Kill Bill. Volume 1",
+          "Kill Bill Volume 1",
+          "Kill Bill Vol. 1",
+          "Kill Bill Vol 1"
+        ],
+        "frame":[
+          "f233"
+        ]
+      },
+      {
+        "id":234,
+        "title":[
+          "Muerte en Venecia",
+          "Morte a Venezia"
+        ],
+        "frame":[
+          "f234"
+        ]
+      },
+      {
+        "id":235,
+        "title":[
+          "El laberinto del fauno"
+        ],
+        "frame":[
+          "f235"
+        ]
+      },
+      {
+        "id":236,
+        "title":[
+          "Batman vuelve",
+          "Batman Returns"
+        ],
+        "frame":[
+          "f236"
+        ]
+      },
+      {
+        "id":237,
+        "title":[
+          "La ola",
+          "Die Welle"
+        ],
+        "frame":[
+          "f237"
+        ]
+      },
+      {
+        "id":238,
+        "title":[
+          "Battle Royale",
+          "Batoru Rowaiaru",
+          "Batalla real"
+        ],
+        "frame":[
+          "f238"
+        ]
+      },
+      {
+        "id":239,
+        "title":[
+          "El Gran Hotel Budapest",
+          "The Grand Budapest Hotel"
+        ],
+        "frame":[
+          "f239"
+        ]
+      },
+      {
+        "id":240,
+        "title":[
+          "Shutter Island"
+        ],
+        "frame":[
+          "f240"
+        ]
+      },
+      {
+        "id":241,
+        "title":[
+          "Coherence"
+        ],
+        "frame":[
+          "f241"
+        ]
+      },
+      {
+        "id":242,
+        "title":[
+          "La juventud",
+          "Youth - La giovinezza",
+          "Youth, La giovinezza",
+          "Youth: La giovinezza",
+          "Youth; La giovinezza",
+          "Youth. La giovinezza",
+          "Youth La giovinezza",
+          "Youth",
+          "La giovinezza"
+        ],
+        "frame":[
+          "f242"
+        ]
+      },
+      {
+        "id":243,
+        "title":[
+          "El bosque",
+          "La aldea",
+          "The Village"
+        ],
+        "frame":[
+          "f243"
+        ]
+      },
+      {
+        "id":244,
+        "title":[
+          "Pink Flamingos"
+        ],
+        "frame":[
+          "f244"
+        ]
+      },
+      {
+        "id":245,
+        "title":[
+          "American Psycho"
+        ],
+        "frame":[
+          "f245"
+        ]
+      },
+      {
+        "id":246,
+        "title":[
+          "Eyes Wide Shut"
+        ],
+        "frame":[
+          "f246"
+        ]
+      },
+      {
+        "id":247,
+        "title":[
+          "Quiero la cabeza de Alfredo García",
+          "Quiero la cabeza de Alfredo Garcia",
+          "Bring Me the Head of Alfredo Garcia"
+        ],
+        "frame":[
+          "f247"
+        ]
+      }
+    ],
+    [
+      {
+        "id":248,
+        "title":[
+          "El quinto poder",
+          "The Fifth Estate"
+        ],
+        "frame":[
+          "f248"
+        ]
+      },
+      {
+        "id":249,
+        "title":[
+          "Persépolis",
+          "Persepolis"
+        ],
+        "frame":[
+          "f249"
+        ]
+      },
+      {
+        "id":250,
+        "title":[
+          "Colossal"
+        ],
+        "frame":[
+          "f250"
+        ]
+      },
+      {
+        "id":251,
+        "title":[
+          "El gran dictador",
+          "The Great Dictator"
+        ],
+        "frame":[
+          "f251"
+        ]
+      },
+      {
+        "id":252,
+        "title":[
+          "Centauros del desierto",
+          "The Searchers"
+        ],
+        "frame":[
+          "f252"
+        ]
+      },
+      {
+        "id":253,
+        "title":[
+          "Una noche en la ópera",
+          "Una noche en la opera",
+          "A Night at the Opera"
+        ],
+        "frame":[
+          "f253"
+        ]
+      },
+      {
+        "id":254,
+        "title":[
+          "El nombre de la rosa",
+          "Le nom de la rose",
+          "Der Name der Rose"
+        ],
+        "frame":[
+          "f254"
+        ]
+      },
+      {
+        "id":255,
+        "title":[
+          "La noche del cazador",
+          "The Night of the Hunter"
+        ],
+        "frame":[
+          "f255"
+        ]
+      },
+      {
+        "id":256,
+        "title":[
+          "Los Picapiedra",
+          "The Flintstones"
+        ],
+        "frame":[
+          "f256"
+        ]
+      },
+      {
+        "id":257,
+        "title":[
+          "Misterioso asesinato en Manhattan",
+          "Manhattan Murder Mystery"
+        ],
+        "frame":[
+          "f257"
+        ]
+      },
+      {
+        "id":258,
+        "title":[
+          "Charada",
+          "Charade"
+        ],
+        "frame":[
+          "f258"
+        ]
+      },
+      {
+        "id":259,
+        "title":[
+          "Recuerda",
+          "Recuerda...",
+          "Spellbound"
+        ],
+        "frame":[
+          "f259"
+        ]
+      },
+      {
+        "id":260,
+        "title":[
+          "Tesis"
+        ],
+        "frame":[
+          "f260"
+        ]
+      },
+      {
+        "id":261,
+        "title":[
+          "Fellini, ocho y medio (8½)",
+          "Fellini. ocho y medio (8½)",
+          "Fellini ocho y medio (8½)",
+          "Fellini, ocho y medio",
+          "Fellini. ocho y medio",
+          "Fellini ocho y medio",
+          "8½",
+          "8 1/2",
+          "Fellini 8½",
+          "Otto e mezzo"
+        ],
+        "frame":[
+          "f261"
+        ]
+      },
+      {
+        "id":262,
+        "title":[
+          "Ghost in the Shell",
+          "Kokaku Kidotai"
+        ],
+        "frame":[
+          "f262"
+        ]
+      },
+      {
+        "id":263,
+        "title":[
+          "Interstellar"
+        ],
+        "frame":[
+          "f263"
+        ]
+      },
+      {
+        "id":264,
+        "title":[
+          "La invasión de los ladrones de cuerpos",
+          "La invasion de los ladrones de cuerpos",
+          "Invasion of the Body Snatchers"
+        ],
+        "frame":[
+          "f264"
+        ]
+      },
+      {
+        "id":265,
+        "title":[
+          "Drácula",
+          "Dracula"
+        ],
+        "frame":[
+          "f265"
+        ]
+      },
+      {
+        "id":266,
+        "title":[
+          "V de Vendetta",
+          "V For Vendetta",
+          "V de venganza"
+        ],
+        "frame":[
+          "f266"
+        ]
+      },
+      {
+        "id":267,
+        "title":[
+          "Regreso al futuro",
+          "Back to the Future"
+        ],
+        "frame":[
+          "f267"
+        ]
+      },
+      {
+        "id":268,
+        "title":[
+          "El jinete pálido",
+          "El jinete palido",
+          "Pale Rider"
+        ],
+        "frame":[
+          "f268"
+        ]
+      },
+      {
+        "id":269,
+        "title":[
+          "Lock & Stock",
+          "Lock, Stock",
+          "Lock. Stock",
+          "Lock Stock",
+          "Lock and Stock",
+          "Lock, Stock and Two Smoking Barrels",
+          "Lock. Stock and Two Smoking Barrels",
+          "Lock; Stock and Two Smoking Barrels",
+          "Lock & Stock and Two Smoking Barrels",
+          "Lock and Stock and Two Smoking Barrels",
+          "Lock Stock and Two Smoking Barrels"
+        ],
+        "frame":[
+          "f269"
+        ]
+      },
+      {
+        "id":270,
+        "title":[
+          "El sexto sentido",
+          "The Sixth Sense"
+        ],
+        "frame":[
+          "f270"
+        ]
+      },
+      {
+        "id":271,
+        "title":[
+          "La cosa (El enigma de otro mundo)",
+          "El enigma de otro mundo",
+          "La cosa",
+          "The Thing"
+        ],
+        "frame":[
+          "f271"
+        ]
+      },
+      {
+        "id":272,
+        "title":[
+          "Sleepy Hollow"
+        ],
+        "frame":[
+          "f272"
+        ]
+      },
+      {
+        "id":273,
+        "title":[
+          "¡Olvídate de mí!",
+          "¡Olvidate de mi!",
+          "Olvídate de mí",
+          "Olvidate de mi",
+          "Eternal Sunshine of the Spotless Mind"
+        ],
+        "frame":[
+          "f273"
+        ]
+      },
+      {
+        "id":274,
+        "title":[
+          "Junior"
+        ],
+        "frame":[
+          "f274"
+        ]
+      },
+      {
+        "id":275,
+        "title":[
+          "El planeta salvaje",
+          "La planéte sauvage",
+          "La planete sauvage"
+        ],
+        "frame":[
+          "f275"
+        ]
+      },
+      {
+        "id":276,
+        "title":[
+          "La llegada",
+          "Arrival"
+        ],
+        "frame":[
+          "f276"
+        ]
+      },
+      {
+        "id":277,
+        "title":[
+          "Camino a la perdición",
+          "Camino a la perdicion",
+          "Road to Perdition"
+        ],
+        "frame":[
+          "f277"
+        ]
+      },
+      {
+        "id":278,
+        "title":[
+          "La vida de Brian",
+          "Monty Python's Life of Brian",
+          "Monty Pythons Life of Brian",
+          "Life of Brian"
+        ],
+        "frame":[
+          "f278"
+        ]
+      }
+    ],
+    [
+      {
+        "id":279,
+        "title":[
+          "Coffee and Cigarettes"
+        ],
+        "frame":[
+          "f279"
+        ]
+      },
+      {
+        "id":280,
+        "title":[
+          "Historias de Nueva York",
+          "New York Stories"
+        ],
+        "frame":[
+          "f280"
+        ]
+      },
+      {
+        "id":281,
+        "title":[
+          "Muerte entre las flores",
+          "Miller's Crossing",
+          "Millers Crossing"
+        ],
+        "frame":[
+          "f281"
+        ]
+      },
+      {
+        "id":282,
+        "title":[
+          "Dead Man"
+        ],
+        "frame":[
+          "f282"
+        ]
+      },
+      {
+        "id":283,
+        "title":[
+          "El gran salto",
+          "The Hudsucker Proxy"
+        ],
+        "frame":[
+          "f283"
+        ]
+      },
+      {
+        "id":284,
+        "title":[
+          "Reservoir Dogs",
+          "Perros de la calle"
+        ],
+        "frame":[
+          "f284"
+        ]
+      },
+      {
+        "id":285,
+        "title":[
+          "Vivir rodando",
+          "Living in Oblivion"
+        ],
+        "frame":[
+          "f285"
+        ]
+      },
+      {
+        "id":286,
+        "title":[
+          "Cosas que hacer en Denver cuando estás muerto",
+          "Cosas que hacer en Denver cuando estas muerto",
+          "Things to Do in Denver When Youre Dead",
+          "Things to Do in Denver When You're Dead"
+        ],
+        "frame":[
+          "f286"
+        ]
+      },
+      {
+        "id":287,
+        "title":[
+          "Barton Fink"
+        ],
+        "frame":[
+          "f287"
+        ]
+      },
+      {
+        "id":288,
+        "title":[
+          "Pulp Fiction"
+        ],
+        "frame":[
+          "f288"
+        ]
+      },
+      {
+        "id":289,
+        "title":[
+          "2013: rescate en L.A.",
+          "2013; rescate en L.A.",
+          "2013, rescate en L.A.",
+          "2013. rescate en L.A.",
+          "2013 rescate en L.A.",
+          "2013: rescate en LA",
+          "2013; rescate en LA",
+          "2013, rescate en LA",
+          "2013. rescate en LA",
+          "2013 rescate en LA",
+          "John Carpenter's Escape from L.A.",
+          "John Carpenter's Escape from LA",
+          "John Carpenters Escape from L.A.",
+          "John Carpenters Escape from LA",
+          "Escape from L.A.",
+          "Escape from LA"
+        ],
+        "frame":[
+          "f289"
+        ]
+      },
+      {
+        "id":290,
+        "title":[
+          "Fargo"
+        ],
+        "frame":[
+          "f290"
+        ]
+      },
+      {
+        "id":291,
+        "title":[
+          "Mr. Deeds",
+          "Mr Deeds"
+        ],
+        "frame":[
+          "f291"
+        ]
+      },
+      {
+        "id":292,
+        "title":[
+          "Con Air (Convictos en el aire)",
+          "Convictos en el aire",
+          "Con Air"
+        ],
+        "frame":[
+          "f292"
+        ]
+      },
+      {
+        "id":293,
+        "title":[
+          "Armageddon"
+        ],
+        "frame":[
+          "f293"
+        ]
+      },
+      {
+        "id":294,
+        "title":[
+          "El gran Lebowski",
+          "The Big Lebowski"
+        ],
+        "frame":[
+          "f294"
+        ]
+      },
+      {
+        "id":295,
+        "title":[
+          "Un papá genial",
+          "Un papa genial",
+          "Big Daddy"
+        ],
+        "frame":[
+          "f295"
+        ]
+      },
+      {
+        "id":296,
+        "title":[
+          "Falsa identidad",
+          "Falsa identidad. Domestic Disturbance",
+          "Falsa identidad, Domestic Disturbance",
+          "Falsa identidad: Domestic Disturbance",
+          "Falsa identidad; Domestic Disturbance",
+          "Falsa identidad Domestic Disturbance",
+          "Domestic Disturbance"
+        ],
+        "frame":[
+          "f296"
+        ]
+      },
+      {
+        "id":297,
+        "title":[
+          "Ghost World"
+        ],
+        "frame":[
+          "f297"
+        ]
+      },
+      {
+        "id":298,
+        "title":[
+          "Spy Kids 2: La isla de los sueños perdidos",
+          "Spy Kids 2; La isla de los sueños perdidos",
+          "Spy Kids 2, La isla de los sueños perdidos",
+          "Spy Kids 2. La isla de los sueños perdidos",
+          "Spy Kids 2 La isla de los sueños perdidos",
+          "Spy Kids 2: The Island of Lost Dreams",
+          "Spy Kids 2; The Island of Lost Dreams",
+          "Spy Kids 2, The Island of Lost Dreams",
+          "Spy Kids 2. The Island of Lost Dreams",
+          "Spy Kids 2 The Island of Lost Dreams",
+          "Spy Kids 2"
+        ],
+        "frame":[
+          "f298"
+        ]
+      },
+      {
+        "id":299,
+        "title":[
+          "Big Fish"
+        ],
+        "frame":[
+          "f299"
+        ]
+      },
+      {
+        "id":300,
+        "title":[
+          "La isla",
+          "The Island"
+        ],
+        "frame":[
+          "f300"
+        ]
+      },
+      {
+        "id":301,
+        "title":[
+          "Delirious"
+        ],
+        "frame":[
+          "f301"
+        ]
+      },
+      {
+        "id":302,
+        "title":[
+          "Paris, je t'aime",
+          "Paris: je t'aime",
+          "Paris. je t'aime",
+          "Paris; je t'aime",
+          "Paris je t'aime",
+          "Paris, je taime",
+          "Paris: je taime",
+          "Paris. je taime",
+          "Paris; je taime",
+          "Paris je taime"
+        ],
+        "frame":[
+          "f302"
+        ]
+      },
+      {
+        "id":303,
+        "title":[
+          "Interview"
+        ],
+        "frame":[
+          "f303"
+        ]
+      },
+      {
+        "id":304,
+        "title":[
+          "Pete Smalls Is Dead"
+        ],
+        "frame":[
+          "f304"
+        ]
+      },
+      {
+        "id":305,
+        "title":[
+          "En la carretera",
+          "On the Road"
+        ],
+        "frame":[
+          "f305"
+        ]
+      },
+      {
+        "id":306,
+        "title":[
+          "El increíble Burt Wonderstone",
+          "El increible Burt Wonderstone",
+          "The Incredible Burt Wonderstone"
+        ],
+        "frame":[
+          "f306"
+        ]
+      },
+      {
+        "id":307,
+        "title":[
+          "Animal Factory"
+        ],
+        "frame":[
+          "f307"
+        ]
+      },
+      {
+        "id":308,
+        "title":[
+          "Trees Lounge (Una última copa)",
+          "Trees Lounge (Una ultima copa)",
+          "Una última copa",
+          "Una ultima copa",
+          "Trees Lounge - Una última copa",
+          "Trees Lounge - Una ultima copa",
+          "Trees Lounge Una última copa",
+          "Trees Lounge Una ultima copa",
+          "Trees Lounge"
+        ],
+        "frame":[
+          "f308"
+        ]
+      },
+      {
+        "id":309,
+        "title":[
+          "Niños grandes",
+          "Grown Ups"
+        ],
+        "frame":[
+          "f309"
         ]
       }
     ]
